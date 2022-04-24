@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/status"
+        tools:src="@drawable/ic_plus_one"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>

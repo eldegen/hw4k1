@@ -27,10 +27,12 @@ class MainFragment : BaseFragment<FragmentMainBinding>() {
     override fun initListeners() {
         binding.btnIncrease.setOnClickListener {
             viewModel.increaseCounter()
+            viewModel.setStatus(true)
         }
 
         binding.btnDecrease.setOnClickListener {
             viewModel.decreaseCounter()
+            viewModel.setStatus(false)
         }
     }
 

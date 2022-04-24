@@ -1,4 +1,4 @@
-package com.example.hw4k1
+package com.example.hw4k1.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

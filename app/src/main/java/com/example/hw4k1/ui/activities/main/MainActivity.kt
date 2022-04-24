@@ -1,17 +1,10 @@
-package com.example.hw4k1.ui.activties.main
+package com.example.hw4k1.ui.activities.main
 
-import android.util.Log
 import android.view.LayoutInflater
-import android.widget.Toast
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
-import com.example.hw4k1.PagerAdapter
+import com.example.hw4k1.adapters.PagerAdapter
 import com.example.hw4k1.base.BaseActivity
 import com.example.hw4k1.databinding.ActivityMainBinding
-import com.example.hw4k1.ui.fragments.main.MainFragment
-import com.example.hw4k1.ui.fragments.second.SecondFragment
-import com.example.hw4k1.ui.fragments.third.ThirdFragment
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 
