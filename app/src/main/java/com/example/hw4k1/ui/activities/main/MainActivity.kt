@@ -17,7 +17,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun initView() {
         adapter = PagerAdapter(this)
 
-
         binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         binding.viewPager.adapter = this.adapter
     }
@@ -31,11 +30,3 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     }
 
 }
-
-/*
-- Добавить ViewPager из 3 фрагментов в MainActivity
-- 1 фрагмент кнопки ‘+’ и ‘-’, при нажатии вызывать соответствующие методы у ViewModel и выполнять необходимую логику
-- 2 фрагмент отображает текущее значение LiveData счетчика
-- 3 фрагмент отображает список выполненных операций (просто список строковых значений, который наблюдаются у ViewModel-a)
-- Для всех задач использовать один ViewModel
-*/
