@@ -14,4 +14,9 @@ class SharedViewModel : ViewModel() {
         counter.value = mCounter
     }
 
+    fun decreaseCounter() {
+        mCounter--
+        counter.value = mCounter
+    }
+
 }

@@ -9,8 +9,7 @@ import androidx.viewbinding.ViewBinding
 
 abstract class BaseFragment<VB: ViewBinding> : Fragment() {
 
-    protected lateinit var _binding: VB
-    protected val binding get() = _binding!!
+    protected lateinit var binding: VB
     protected abstract fun inflateVB(inflater: LayoutInflater, container: ViewGroup?, b: Boolean): VB
 
     override fun onCreateView(
@@ -18,10 +17,11 @@ abstract class BaseFragment<VB: ViewBinding> : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = inflateVB(inflater, container, false)
+        binding = inflateVB(inflater, container, false)
 
         initView()
         initListeners()
+        initObservers()
         otherThings()
 
         return binding.root
@@ -30,6 +30,8 @@ abstract class BaseFragment<VB: ViewBinding> : Fragment() {
     abstract fun initView()
 
     abstract fun initListeners()
+
+    abstract fun initObservers()
 
     abstract fun otherThings()
 

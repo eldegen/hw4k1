@@ -15,12 +15,16 @@ class PagerAdapter(fa: FragmentActivity) :   FragmentStateAdapter(fa) {
         return 3}
 
     override fun createFragment(position: Int): Fragment {
-        return if (position == 0) {
-            MainFragment()
-        } else if (position == 1) {
-            SecondFragment()
-        } else {
-            ThirdFragment()
+        return when (position) {
+            0 -> {
+                MainFragment()
+            }
+            1 -> {
+                SecondFragment()
+            }
+            else -> {
+                ThirdFragment()
+            }
         }
     }
 
