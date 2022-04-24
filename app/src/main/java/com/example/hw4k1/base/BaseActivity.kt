@@ -20,9 +20,9 @@ abstract class BaseActivity<VB: ViewBinding> : AppCompatActivity() {
         otherThings()
     }
 
-    abstract fun initListeners()
-
     abstract fun initView()
+
+    abstract fun initListeners()
 
     abstract fun otherThings()
 

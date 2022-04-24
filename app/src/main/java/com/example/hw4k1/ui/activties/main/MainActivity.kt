@@ -22,18 +22,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     }
 
     override fun initView() {
-        adapter = PagerAdapter(supportFragmentManager, lifecycle)
+        adapter = PagerAdapter(this)
 
-        adapter.addFragment(MainFragment())
-        adapter.addFragment(SecondFragment())
-        adapter.addFragment(ThirdFragment())
 
         binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         binding.viewPager.adapter = this.adapter
-
-        Log.d("bruh", "initView: " + adapter.itemCount)
-
-        Toast.makeText(this, "a", Toast.LENGTH_SHORT).show()
     }
 
     override fun initListeners() {
